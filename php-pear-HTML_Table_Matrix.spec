@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - Autofill a table with data
 Summary(pl):	%{_pearname} - Automatycznie wype³nianie tabeli danymi
 Name:		php-pear-%{_pearname}
-Version:	1.0.4
+Version:	1.0.5
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	17af7ae76cef355241ff5c4c2eafb360
+# Source0-md5:	69e4f2535a1195afe8694264970354ce
 URL:		http://pear.php.net/package/Class_Subclass/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -74,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Matrix/Filler
 
 install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-install %{_pearname}-%{version}/Matrix/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class]/%{_subclass}/Matrix
+install %{_pearname}-%{version}/Matrix/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Matrix
 install %{_pearname}-%{version}/Matrix/Filler/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Matrix/Filler
 
 %clean
@@ -83,5 +83,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc %{_pearname}-%{version}/examples
-%{php_pear_dir}/%{_class}/%{_subclass}/Matrix
 %{php_pear_dir}/%{_class}/%{_subclass}/Matrix.php
+%{php_pear_dir}/%{_class}/%{_subclass}/Matrix
