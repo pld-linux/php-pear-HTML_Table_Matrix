@@ -61,7 +61,7 @@ wype³nianie tabel danymi. Cechy pakietu:
   a nadmiarowe dane zostan± zignorowane.
 - Mo¿na podaæ offset wype³nienia aby zostawiæ miejsce na nag³ówek lub
   inne elementy tabeli.
-- Jest w ope³ni udokumentowany przy u¿yciu PHPDoc.
+- Jest w pe³ni udokumentowany przy u¿yciu PHPDoc.
 - Zawiera w pe³ni funkcjonalny kod przyk³adowy.
 
 Ta klasa ma w PEAR status: %{_status}.
