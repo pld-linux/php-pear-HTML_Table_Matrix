@@ -40,7 +40,7 @@ easily fill up a table with data. Features:
 - Fully documented with PHPDoc.
 - Includes fully functional example code.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 HTML_Table_Matrix to rozszerzenie HTML_Table pozwalaj±ce na ³atwe
