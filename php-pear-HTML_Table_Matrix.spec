@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          HTML
-%define         _subclass       Table
+%define		_class		HTML
+%define		_subclass	Table
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}_Matrix
 
-Summary:	%{_pearname} - Autofill a table with data
-Summary(pl):	%{_pearname} - Automatycznie wype³nianie tabeli danymi
+Summary:	%{_pearname} - autofill a table with data
+Summary(pl):	%{_pearname} - automatycznie wype³nianie tabeli danymi
 Name:		php-pear-%{_pearname}
 Version:	1.0.6
 Release:	1
