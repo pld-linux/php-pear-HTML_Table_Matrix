@@ -8,7 +8,7 @@ Summary:	%{_pearname} - autofill a table with data
 Summary(pl):	%{_pearname} - automatycznie wype³nianie tabeli danymi
 Name:		php-pear-%{_pearname}
 Version:	1.0.8
-Release:	1.2
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
