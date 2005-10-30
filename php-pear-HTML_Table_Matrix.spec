@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - autofill a table with data
 Summary(pl):	%{_pearname} - automatycznie wype³nianie tabeli danymi
 Name:		php-pear-%{_pearname}
-Version:	1.0.8
-Release:	2
+Version:	1.0.9
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	5f60dac01d9f1a9a251ab1e9585f5259
+# Source0-md5:	6202f9b43a13b2104b4db8622002f455
 URL:		http://pear.php.net/package/HTML_Table_Matrix/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
