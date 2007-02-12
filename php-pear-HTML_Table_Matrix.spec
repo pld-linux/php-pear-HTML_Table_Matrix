@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}_Matrix
 
 Summary:	%{_pearname} - autofill a table with data
-Summary(pl):	%{_pearname} - automatycznie wype³nianie tabeli danymi
+Summary(pl.UTF-8):   %{_pearname} - automatycznie wypeÅ‚nianie tabeli danymi
 Name:		php-pear-%{_pearname}
 Version:	1.0.9
 Release:	2
@@ -48,27 +48,27 @@ easily fill up a table with data. Features:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-HTML_Table_Matrix to rozszerzenie HTML_Table pozwalaj±ce na ³atwe
-wype³nianie tabel danymi. Cechy pakietu:
-- U¿ywa klas Filler do okre¶lenia sposobu wype³niania tabeli danymi.
-  Przy u¿yciu w³asnego Fillera mo¿na wype³niaæ danymi do góry, w dó³,
-  do przodu, do ty³u, po przek±tnej, losowo lub w dowolny inny sposób.
-- Zawiera klasy Filler do wype³niania od lewej do prawej, od góry do
-  do³u oraz od prawej do lewej, od góry do do³u.
-- Wyabstrahowane metody Filler pozwalaj± utrzymaæ kod czystym i ³atwym
+%description -l pl.UTF-8
+HTML_Table_Matrix to rozszerzenie HTML_Table pozwalajÄ…ce na Å‚atwe
+wypeÅ‚nianie tabel danymi. Cechy pakietu:
+- UÅ¼ywa klas Filler do okreÅ›lenia sposobu wypeÅ‚niania tabeli danymi.
+  Przy uÅ¼yciu wÅ‚asnego Fillera moÅ¼na wypeÅ‚niaÄ‡ danymi do gÃ³ry, w dÃ³Å‚,
+  do przodu, do tyÅ‚u, po przekÄ…tnej, losowo lub w dowolny inny sposÃ³b.
+- Zawiera klasy Filler do wypeÅ‚niania od lewej do prawej, od gÃ³ry do
+  doÅ‚u oraz od prawej do lewej, od gÃ³ry do doÅ‚u.
+- Wyabstrahowane metody Filler pozwalajÄ… utrzymaÄ‡ kod czystym i Å‚atwym
   do zrozumienia.
-- Wysoko¶æ lub szeroko¶æ tabeli mo¿e byæ pominiêta, a w³a¶ciwy rozmiar
+- WysokoÅ›Ä‡ lub szerokoÅ›Ä‡ tabeli moÅ¼e byÄ‡ pominiÄ™ta, a wÅ‚aÅ›ciwy rozmiar
   tabel oparty na dostarczonych danych.
-- Zrêcznie integruje siê z klas± Pager tworz±c przyjemne stronnicowane
-  tabele, takie jak dla galerii obrazków. Wystarczy podaæ wysoko¶æ lub
-  szeroko¶æ, klasê Filler i dostarczyæ dane zwrócone przez Pager.
-- Tabele mog± byæ ograniczane do okre¶lonej wysoko¶ci lub szeroko¶ci,
-  a nadmiarowe dane zostan± zignorowane.
-- Mo¿na podaæ offset wype³nienia aby zostawiæ miejsce na nag³ówek lub
+- ZrÄ™cznie integruje siÄ™ z klasÄ… Pager tworzÄ…c przyjemne stronnicowane
+  tabele, takie jak dla galerii obrazkÃ³w. Wystarczy podaÄ‡ wysokoÅ›Ä‡ lub
+  szerokoÅ›Ä‡, klasÄ™ Filler i dostarczyÄ‡ dane zwrÃ³cone przez Pager.
+- Tabele mogÄ… byÄ‡ ograniczane do okreÅ›lonej wysokoÅ›ci lub szerokoÅ›ci,
+  a nadmiarowe dane zostanÄ… zignorowane.
+- MoÅ¼na podaÄ‡ offset wypeÅ‚nienia aby zostawiÄ‡ miejsce na nagÅ‚Ã³wek lub
   inne elementy tabeli.
-- Jest w pe³ni udokumentowany przy u¿yciu PHPDoc.
-- Zawiera w pe³ni funkcjonalny kod przyk³adowy.
+- Jest w peÅ‚ni udokumentowany przy uÅ¼yciu PHPDoc.
+- Zawiera w peÅ‚ni funkcjonalny kod przykÅ‚adowy.
 
 Ta klasa ma w PEAR status: %{_status}.
 
