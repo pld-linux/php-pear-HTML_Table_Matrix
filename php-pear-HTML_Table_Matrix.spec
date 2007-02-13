@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}_Matrix
 
 Summary:	%{_pearname} - autofill a table with data
-Summary(pl.UTF-8):   %{_pearname} - automatycznie wypełnianie tabeli danymi
+Summary(pl.UTF-8):	%{_pearname} - automatycznie wypełnianie tabeli danymi
 Name:		php-pear-%{_pearname}
 Version:	1.0.9
 Release:	2
