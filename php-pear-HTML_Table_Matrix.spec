@@ -3,22 +3,22 @@
 %define		_subclass	Table
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}_Matrix
-
 Summary:	%{_pearname} - autofill a table with data
 Summary(pl.UTF-8):	%{_pearname} - automatycznie wypełnianie tabeli danymi
 Name:		php-pear-%{_pearname}
-Version:	1.0.9
-Release:	3
+Version:	1.0.10
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	6202f9b43a13b2104b4db8622002f455
+# Source0-md5:	563aa076399bcaa6d690bbe24fe90090
 URL:		http://pear.php.net/package/HTML_Table_Matrix/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
 Requires:	php-pear-HTML_Table
+Requires:	php-pear-PEAR-core >= 1:1.4.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,16 +29,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 HTML_Table_Matrix is an extension to HTML_Table which allows you to
 easily fill up a table with data. Features:
 - It uses Filler classes to determine how the data gets filled in the
-  table. With a custom Filler, you can fill data in up, down,
-  forwards, backwards, diagonally, randomly or any other way you like.
+  table. With a custom Filler, you can fill data in up, down, forwards,
+  backwards, diagonally, randomly or any other way you like.
 - Comes with Fillers to fill left-to-right-top-to-bottom and
   right-to-left-top-to-bottom.
 - Abstract Filler methods keep the code clean & easy to understand.
 - Table height or width may be omitted, and it will figure out the
   correct table size based on the data you provide.
 - It integrates handily with Pager to create pleasant pageable table
-  layouts, such as for an image gallery. Just specify a height or
-  width, Filler, and feed it the data returned from Pager.
+  layouts, such as for an image gallery. Just specify a height or width,
+  Filler, and feed it the data returned from Pager.
 - Table may be constrained to a specific height or width, and excess
   data will be ignored.
 - Fill offset may be specified, to leave room for a table header, or
@@ -52,8 +52,8 @@ In PEAR status of this package is: %{_status}.
 HTML_Table_Matrix to rozszerzenie HTML_Table pozwalające na łatwe
 wypełnianie tabel danymi. Cechy pakietu:
 - Używa klas Filler do określenia sposobu wypełniania tabeli danymi.
-  Przy użyciu własnego Fillera można wypełniać danymi do góry, w dół,
-  do przodu, do tyłu, po przekątnej, losowo lub w dowolny inny sposób.
+  Przy użyciu własnego Fillera można wypełniać danymi do góry, w dół, do
+  przodu, do tyłu, po przekątnej, losowo lub w dowolny inny sposób.
 - Zawiera klasy Filler do wypełniania od lewej do prawej, od góry do
   dołu oraz od prawej do lewej, od góry do dołu.
 - Wyabstrahowane metody Filler pozwalają utrzymać kod czystym i łatwym
@@ -75,12 +75,15 @@ Ta klasa ma w PEAR status: %{_status}.
 %prep
 %pear_package_setup
 
-mv ./%{php_pear_dir}/doc docs
+# examples fixups
+mv ./%{php_pear_dir}/examples .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}
+install -d $RPM_BUILD_ROOT{%{php_pear_dir},%{_examplesdir}/%{name}-%{version}}
 %pear_package_install
+
+cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -93,7 +96,8 @@ fi
 %files
 %defattr(644,root,root,755)
 %doc install.log optional-packages.txt
-%doc docs/%{_pearname}/examples
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/%{_subclass}/Matrix.php
 %{php_pear_dir}/%{_class}/%{_subclass}/Matrix
+
+%{_examplesdir}/%{name}-%{version}
